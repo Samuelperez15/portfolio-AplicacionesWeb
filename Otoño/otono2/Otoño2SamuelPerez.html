@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Segundo Poema de Otoño</title>
+    <link href="imagenes/favicon.ico" rel="icon">
+    <!-- la siguiente hoja de estilo sólo se ve bien si tenemos una pantalla apaisada,
+         una pantalla de PC, porque el diseño y la distribución están basados en 
+         una imagen rectangular de fondo de escritorio de PC 
+         la próxima semana veremos como hacerla responsive para teléfono y táblet -->
+    <style>
+       body { font-family: 'Alatsi', cursive;}
+       #wrapper {background-image: url("imagenes/fondootoño.jpg");
+                 background-repeat: no-repeat;
+            /* size cover para estirar la imagen */
+                 background-size:cover;
+            /* ancho total */
+                 width:100vw;
+            /* alto total */
+                 height:140vh;
+                 padding:2vh;
+                 }
+       #poema {width:30%;
+               background-color:rgba(253, 251, 148, 0.5);
+               text-align:center;
+            /* centra el bloque del poema */
+               margin: 10px auto;
+            /* aumenta o disminuye en funcion del alto de pantalla disponible */
+               padding:2vh;
+               font-size:2vh;}
+    
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="poema">
+        <h1>Amanecer de otoño</h1>
+
+        <p>Una larga carretera<br>
+            entre grises peñascales,<br>
+            y alguna humilde praderao<br>
+            donde pacen negros toros. Zarzas, malezas,jarales..</p>
+        
+        <p>Está la tierra mojada<br>
+            por las gotas del rocío,<br>
+            y la alameda dorada,<br>
+            hacia la curva del río.<br>
+            Tras los montes de violeta<br>
+            quebrado el primer albor:<br>
+            a la espalda la escopeta,<br>
+            entre sus galgos agudos, caminando un cazador.</p>
+        
+       
+        <h2>Antonio Machado</h2>
+      </div>
+    </div>  
+</body>
+</html>

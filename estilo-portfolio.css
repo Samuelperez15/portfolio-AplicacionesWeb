@@ -1,0 +1,31 @@
+/*body {}*/
+#wrapper {width:90%;
+          height:600px;
+          background-color:white;
+          margin:auto;}
+header {background-image:url("portfolio-imagenes/header.jpg");
+        background-size:cover;
+        background-position:center;
+        height:300px;
+        }
+div.polaroid {
+                width: 40%;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 20px;
+                /*float:left;*/
+                margin-left:4%;
+                display: inline-block;
+              }
+div.polaroid:hover{
+              opacity:0.5;
+              }
+              
+div.container {
+                text-align: center;
+                padding: 10px 20px;
+              }
+
+@media only screen and (max-width:500px){
+                div.polaroid {width:90%;}
+                }

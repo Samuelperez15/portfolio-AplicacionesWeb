@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scare Halloween Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+    body {background-color:black;
+        }
+    #wrapper {background-image:url("imagenes/fondo4.jpg");
+                    background-repeat: no-repeat;
+                    position: relative;
+                    width: 1200px;
+                    height:879px;
+                    margin: 20px auto;
+                    border-radius:200px;
+                    margin:auto;
+                    box-shadow:rgb(143, 98, 15) 20px 20px 20px
+                    rgb(143, 98, 15) -20px -20px 20px,
+                    rgb(143, 98, 15) 20px -20px 20px,
+                    rgb(143, 98, 15) -20px 20px 20px;}
+    h1 {position:absolute;/* lo que va dentro se mueve con el */
+                    left: 400px;
+                    top: 20px;
+                    font-family: "Creepster", cursive;
+                    font-size: 350%
+                    }             
+    #p1 {position:absolute;
+                top:475px;
+                left:900px;
+                font-size:200%;
+                font-family: "Creepster", cursive;}
+    #pumpkin {position:absolute;
+                top:600px;
+                left:920px
+                width:160px;
+                height:130px;
+                border:1px solid white;}
+    #murcielago {position: absolute;
+                visibility: hidden;}
+                
+
+
+    </style>
+       <script>
+            function mostrar(id){
+                    document.getElementById(id).style.visibility="visible";
+                    }
+            function sonar(id){
+                    document.getElementById(id).play();
+                    }
+        </script>
+        
+</head>
+<body>
+    <audio id="demon">
+        <source src="sonidos/sonidohalloween.mp3" type="audio/mpeg">
+    </audio>
+    <div id="wrapper">
+        <h1>Scary Halloween Party</h1>
+        <p id="p1">Don´t disturb the zombie!!!!...</p>
+        <div id="cat"></div>
+        <img id="zombie" src="imagenes/zombie.gif" height="300" onclick="mostrar('murcielago');sonar('demon')">
+        <img id="murcielago" src="imagenes/murcielago.gif" height="150">
+    </div>
+
+ 
+
+    
+
+
+<body>
+</html>
